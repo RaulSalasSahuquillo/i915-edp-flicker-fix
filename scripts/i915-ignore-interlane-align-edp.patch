@@ -1,0 +1,26 @@
+# Local workaround for drivers/gpu/drm/i915/display/intel_dp.c: ignore DP_INTERLANE_ALIGN_DONE on eDP in the
+# post-training link recheck. Not an upstream patch.
+# License: the same terms as the file it modifies (MIT-style header, Copyright Intel Corporation).
+# patch(1) ignores these leading lines.
+#
+--- a/drivers/gpu/drm/i915/display/intel_dp.c
++++ b/drivers/gpu/drm/i915/display/intel_dp.c
+@@ -5536,6 +5536,18 @@
+ 	if (intel_dp->link.seq_train_failures)
+ 		return true;
+ 
++	/*
++	 * LOCAL WORKAROUND (MSI Prestige 16Studio A13VF, AUO B160QAN02.K eDP
++	 * panel): the sink reports INTERLANE_ALIGN_DONE=0 at the post-training
++	 * link recheck even though all lanes report CR/EQ/symbol lock, which
++	 * sends the driver into an endless retrain loop (visible as the panel
++	 * blanking every ~3 s). Ignore only that bit, only for eDP; the per-lane
++	 * CR/EQ/symbol lock bits are still checked.
++	 */
++	if (intel_dp_is_edp(intel_dp))
++		link_status[DP_LANE_ALIGN_STATUS_UPDATED - DP_LANE0_1_STATUS] |=
++			DP_INTERLANE_ALIGN_DONE;
++
+ 	/* Retrain if link not ok */
+ 	return !intel_dp_link_ok(intel_dp, link_status) &&
+ 		!intel_psr_link_ok(intel_dp);

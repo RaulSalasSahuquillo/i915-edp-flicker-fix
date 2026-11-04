@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" width="800" height="340" role="img" aria-labelledby="t d">
+<title id="t">The retrain loop</title><desc id="d">Four steps in a circle: train the eDP link, switch the backlight on, two seconds later the kernel thinks a bit is missing, retrain with a panel power cycle, and repeat every 3.07 seconds.</desc>
+<defs><filter id="r2" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<style>
+  .h{font:700 28px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#4A3426}
+  .t{font:600 17px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#4A3426}
+  .s{font:500 15px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#7A5A44}
+  .n{font:500 15px 'Segoe Print','Bradley Hand','Chalkboard SE','Ink Free','Marker Felt',ui-rounded,'Segoe UI',system-ui,sans-serif;fill:#7A5A44}
+  .big{font:800 40px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#4A3426}
+  .stroke{fill:none;stroke:#4A3426;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+  .dot{offset-path:path('M 200 102 L 600 102 Q 612 102 612 114 L 612 240 Q 612 252 600 252 L 200 252 Q 188 252 188 240 L 188 114 Q 188 102 200 102 Z');offset-rotate:0deg;animation:run 8s linear infinite}
+  @keyframes run{from{offset-distance:0%}to{offset-distance:100%}}
+  .belt{stroke-dasharray:2 11;animation:belt 3s linear infinite}
+  @keyframes belt{to{stroke-dashoffset:-26}}
+  .hot{animation:hot 8s ease-in-out infinite}
+  @keyframes hot{0%,55%{fill:#FBF3E4}70%,88%{fill:#F3D3C4}100%{fill:#FBF3E4}}
+  .blink{animation:bl 3.07s steps(1) infinite}
+  @keyframes bl{0%{opacity:1}60%{opacity:1}66%{opacity:.1}74%{opacity:1}82%{opacity:.15}90%,100%{opacity:1}}
+</style>
+<rect x="2" y="2" width="796" height="336" rx="26" fill="#FBF3E4"/>
+<path d="M 28.6 2.2 L 771.4 2.0 Q 797.1 2.7 795.9 29.0 L 795.9 310.8 Q 796.0 336.0 770.8 337.8 L 28.1 336.3 Q 3.3 338.1 3.2 310.8 L 4.1 27.9 Q 3.9 2.5 28.1 2.1 Z" fill="none" stroke="#E6D2AE" stroke-width="2.5"/>
+
+<text x="44" y="40" class="n" style="font-size:18px">the loop</text>
+<path class="belt" d="M 200 102 L 600 102 Q 612 102 612 114 L 612 240 Q 612 252 600 252 L 200 252 Q 188 252 188 240 L 188 114 Q 188 102 200 102 Z" fill="none" stroke="#E8A33D" stroke-width="4" stroke-linecap="round"/>
+<path d="M 391.0 93.0 L 405.4 102.0 L 391.0 111.0" fill="none" stroke="#E8A33D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M 603.0 168.0 L 612.0 182.4 L 621.0 168.0" fill="none" stroke="#E8A33D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M 409.0 243.0 L 394.6 252.0 L 409.0 261.0" fill="none" stroke="#E8A33D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M 179.0 186.0 L 188.0 171.6 L 197.0 186.0" fill="none" stroke="#E8A33D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle class="dot" r="9" fill="#C65D3B"/>
+<g filter="url(#r2)"><path class="" d="M 87.3 66.6 L 304.9 67.3 Q 319.2 66.4 321.3 83.2 L 320.2 116.9 Q 319.7 135.6 302.7 133.4 L 87.4 133.8 Q 69.1 133.4 71.3 117.5 L 69.8 82.4 Q 71.0 66.0 84.7 66.2 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3" stroke-linejoin="round"/><text x="195" y="106" text-anchor="middle" class="t" style="font-size:16px">1 · train the link</text><path class="" d="M 494.9 66.6 L 714.4 65.9 Q 729.1 66.9 731.0 82.0 L 730.0 117.2 Q 728.4 133.6 714.3 132.6 L 496.9 133.1 Q 479.1 132.5 481.6 118.8 L 481.2 82.4 Q 478.5 65.5 496.0 64.8 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3" stroke-linejoin="round"/><text x="605" y="106" text-anchor="middle" class="t" style="font-size:16px">2 · backlight on</text><path class="" d="M 497.5 218.8 L 712.5 221.6 Q 729.0 218.8 730.5 235.5 L 731.2 271.1 Q 731.5 287.4 714.3 289.4 L 496.6 289.4 Q 480.7 286.6 481.2 272.3 L 479.4 235.0 Q 481.1 220.3 497.4 220.9 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3" stroke-linejoin="round"/><text x="605" y="260" text-anchor="middle" class="t" style="font-size:16px">3 · +2 s: “a bit is missing?”</text><path class="hot" d="M 87.4 221.4 L 305.3 218.7 Q 320.3 219.8 320.1 234.8 L 319.0 271.8 Q 319.1 287.9 302.5 286.7 L 86.7 287.7 Q 70.0 288.7 69.5 270.6 L 70.9 236.3 Q 70.5 220.4 87.5 219.6 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3" stroke-linejoin="round"/><text x="195" y="260" text-anchor="middle" class="t" style="font-size:16px">4 · retrain: panel off/on</text></g>
+<g class="blink"><rect x="362" y="136" width="76" height="46" rx="6" fill="#E8A33D"/></g>
+<g filter="url(#r2)"><path class="stroke" d="M 364.2 130.3 L 436.8 129.5 Q 444.4 130.9 445.0 137.2 L 444.4 180.3 Q 444.0 189.1 436.1 187.9 L 365.1 188.3 Q 355.5 187.5 356.0 178.9 L 356.3 138.6 Q 355.8 130.8 365.0 130.1 Z" stroke-width="3.5"/><path class="stroke" d="M 380 196 H 420" stroke-width="3.5"/></g>
+<text x="400" y="216" text-anchor="middle" class="t" style="font-size:20px;font-weight:800">every 3.07 s</text>
+<text x="400" y="236" text-anchor="middle" class="n">= the flicker</text>
+
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250" role="img" aria-labelledby="t d">
+<title id="t">Automatic rebuild</title><desc id="d">A new kernel triggers a pipeline: exact source, apply patch, build i915, validate, install; any failure installs nothing.</desc>
+<defs><filter id="r5" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="14" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<style>
+  .h{font:700 28px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#4A3426}
+  .t{font:600 17px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#4A3426}
+  .s{font:500 15px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#7A5A44}
+  .n{font:500 15px 'Segoe Print','Bradley Hand','Chalkboard SE','Ink Free','Marker Felt',ui-rounded,'Segoe UI',system-ui,sans-serif;fill:#7A5A44}
+  .big{font:800 40px ui-rounded,'SF Pro Rounded','Nunito','Segoe UI',system-ui,-apple-system,sans-serif;fill:#4A3426}
+  .stroke{fill:none;stroke:#4A3426;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+  .mk{animation:walk 12s ease-in-out infinite}
+  @keyframes walk{0%,6%{transform:translateX(0)}18%,24%{transform:translateX(126px)}36%,42%{transform:translateX(252px)}54%,60%{transform:translateX(378px)}72%,78%{transform:translateX(504px)}90%,100%{transform:translateX(630px)}}
+  .mkh{animation:halo 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes halo{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.22);opacity:.55}}
+  .note{animation:sway 5s ease-in-out infinite}
+  @keyframes sway{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+</style>
+<rect x="2" y="2" width="796" height="246" rx="26" fill="#FBF3E4"/>
+<path d="M 28.6 2.2 L 771.4 2.0 Q 797.1 2.7 795.9 29.0 L 795.9 220.8 Q 796.0 246.0 770.8 247.8 L 28.1 246.3 Q 3.3 248.1 3.2 220.8 L 4.1 27.9 Q 3.9 2.5 28.1 2.1 Z" fill="none" stroke="#E6D2AE" stroke-width="2.5"/>
+
+<text x="44" y="40" class="n" style="font-size:18px">when a new kernel arrives</text>
+<g class="mk"><circle class="mkh" cx="85" cy="90" r="40" fill="#F7D58E" opacity=".9"/></g>
+<g filter="url(#r5)"><path d="M 84.4 62.2 L 84.2 63.0 Q 112.9 61.5 114.3 90.9 L 114.2 90.5 Q 112.0 117.6 84.2 118.9 L 83.4 118.9 Q 55.9 117.4 57.4 90.6 L 57.0 90.2 Q 57.3 62.3 83.7 61.4 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3"/><text x="85" y="97" text-anchor="middle" class="t" style="font-size:19px">1</text><text x="85" y="146" text-anchor="middle" class="s" style="font-size:14.5px">new kernel</text><path d="M 211.0 62.2 L 212.0 61.4 Q 238.4 62.6 239.0 89.5 L 238.7 89.5 Q 237.9 118.4 212.3 118.6 L 211.4 117.5 Q 182.8 116.9 183.7 89.3 L 182.3 91.5 Q 182.5 63.5 211.4 62.8 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3"/><text x="211" y="97" text-anchor="middle" class="t" style="font-size:19px">2</text><text x="211" y="146" text-anchor="middle" class="s" style="font-size:14.5px">exact source</text><path d="M 338.4 61.0 L 338.5 61.2 Q 364.9 63.3 364.5 90.0 L 363.9 91.5 Q 366.6 116.9 335.8 117.9 L 337.1 118.9 Q 308.5 118.3 307.9 89.1 L 307.7 90.1 Q 309.2 62.4 338.4 61.4 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3"/><text x="337" y="97" text-anchor="middle" class="t" style="font-size:19px">3</text><text x="337" y="146" text-anchor="middle" class="s" style="font-size:14.5px">apply patch</text><path d="M 462.8 61.3 L 464.3 61.9 Q 489.7 62.8 489.6 89.0 L 489.6 90.4 Q 492.1 118.4 462.1 119.1 L 464.2 117.5 Q 434.3 118.6 436.5 91.3 L 436.2 90.7 Q 434.1 62.4 462.8 62.4 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3"/><text x="463" y="97" text-anchor="middle" class="t" style="font-size:19px">4</text><text x="463" y="146" text-anchor="middle" class="s" style="font-size:14.5px">build i915</text><path d="M 588.9 62.4 L 588.7 63.3 Q 615.5 63.6 617.7 91.0 L 618.0 89.0 Q 618.0 118.5 587.9 119.2 L 588.8 118.7 Q 559.7 118.6 559.4 88.6 L 559.7 88.5 Q 561.3 61.1 588.0 63.0 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3"/><text x="589" y="97" text-anchor="middle" class="t" style="font-size:19px">5</text><text x="589" y="146" text-anchor="middle" class="s" style="font-size:14.5px">validate</text><path d="M 714.7 61.3 L 716.1 61.8 Q 743.1 62.2 742.5 90.4 L 744.3 88.6 Q 743.2 117.2 715.5 118.4 L 713.5 116.8 Q 687.1 119.1 688.0 91.0 L 685.8 89.5 Q 687.2 61.6 714.1 63.4 Z" fill="#FBF3E4" stroke="#4A3426" stroke-width="3"/><text x="715" y="97" text-anchor="middle" class="t" style="font-size:19px">6</text><text x="715" y="146" text-anchor="middle" class="s" style="font-size:14.5px">install</text><path d="M 119 90 Q 148 84 177 90" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round"/><path d="M 169 84 L 177 90 L 169 97" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 245 90 Q 274 84 303 90" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round"/><path d="M 295 84 L 303 90 L 295 97" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 371 90 Q 400 84 429 90" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round"/><path d="M 421 84 L 429 90 L 421 97" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 497 90 Q 526 84 555 90" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round"/><path d="M 547 84 L 555 90 L 547 97" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 623 90 Q 652 84 681 90" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round"/><path d="M 673 84 L 681 90 L 673 97" fill="none" stroke="#4A3426" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g class="note">
+  <path d="M 589 156 Q 577 170 529 178" fill="none" stroke="#D98A7A" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <path d="M 134.8 177.5 L 665.3 178.9 Q 678.9 177.9 680.2 192.3 L 679.0 208.4 Q 680.0 223.0 664.7 223.3 L 133.1 222.9 Q 120.0 222.9 119.1 207.5 L 118.8 192.8 Q 120.1 177.2 133.1 176.8 Z" fill="#F7DDD4" stroke="#D98A7A" stroke-width="2.8"/>
+  <path d="M 146 200 L 158 212 M 158 200 L 146 212" stroke="#C65D3B" stroke-width="4" stroke-linecap="round"/>
+  <text x="176" y="206" class="t" style="font-size:15.5px">if anything fails: nothing is installed, the stock driver stays</text>
+</g>
+
+</svg>

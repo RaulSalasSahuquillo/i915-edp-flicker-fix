@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 24" width="800" height="24" role="img" aria-label=""><style>
+  .sq{stroke-dasharray:7 11;animation:sw 7s linear infinite}
+  @keyframes sw{to{stroke-dashoffset:-72}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style><path class="sq" d="M 10 12 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0 q 20 -9 40 0 t 40 0" fill="none" stroke="#E8A33D" stroke-width="3.5" stroke-linecap="round"/></svg>
